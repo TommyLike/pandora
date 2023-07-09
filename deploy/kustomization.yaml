@@ -1,0 +1,13 @@
+resources:
+  - deployment.yaml
+  - namespace.yaml
+  - ingress.yaml
+  - pvc.yaml
+  - oauth-proxy.yaml
+  - secrets.yaml
+commonLabels:
+  app: chatgpt-reverse
+commonAnnotations:
+  owner: tommylike
+  email: "tommylikehu@gmail.com"
+namespace: chatgpt
