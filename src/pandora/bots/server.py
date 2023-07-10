@@ -109,7 +109,7 @@ class ChatBot:
 
     @staticmethod
     def __get_token_key():
-        return request.headers.get('X-Use-Token', request.cookies.get('token-key'))
+        return request.headers.get('X-Forwarded-Email', request.cookies.get('token-key'))
 
     def chat(self, conversation_id=None):
         query = {'chatId': [conversation_id]} if conversation_id else {}

@@ -39,6 +39,6 @@ spec:
           volumeMounts:
             - mountPath: /data
               name: data
-            - mountPath: /app/config/tokens.txt
+            - mountPath: /opt/app/tokens.txt
               name: secret
-              subPath: control-server-toml
+              subPath: token_secret
